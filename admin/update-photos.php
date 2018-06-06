@@ -14,7 +14,7 @@ if(isset($_POST['submit']))
 $pname=$_POST['photoname'];
 $pimage=$_FILES["danceimage"]["name"];
 move_uploaded_file($_FILES["danceimage"]["tmp_name"],"danceimages/".$_FILES["danceimage"]["name"]);
-$sql="update tblphotos set PhotoName=:pname, danceImage=:pimage where PhotoId=:pid";
+$sql="update tblphotos set EventName=:pname, danceImage=:pimage where PhotoId=:pid";
 $query = $dbh->prepare($sql);
 $query->bindParam(':pname',$pname,PDO::PARAM_STR);
 $query->bindParam(':pimage',$pimage,PDO::PARAM_STR);
@@ -24,14 +24,14 @@ $query->bindParam(':pimage',$pimage,PDO::PARAM_STR);
 // $query->bindParam(':pdetails',$pdetails,PDO::PARAM_STR);
 $query->bindParam(':pid',$pid,PDO::PARAM_STR);
 $query->execute();
-$msg="Photos Updated Successfully";
+$msg="Event updated successfully";
 }
 
 	?>
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Timila Dance Academy | Admin Photo Creation</title>
+<title>Timila Dance Academy | Admin Manage Photos</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Pooled Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,

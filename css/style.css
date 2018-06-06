@@ -238,6 +238,63 @@ i.fa.fa-columns {
     font-size: 9em;
     color: #1f8dd6;
 }
+
+.v-header {
+	height: 100vh;
+	display:flex;
+	align-items: center;
+	color: #fff;
+}
+
+.v-header .container {
+	max-width:960px;
+	padding-left:1rem;
+	padding-right:1rem;
+	margin: auto;
+	text-align: center;
+}
+
+.fullscreen-video-wrap{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.fullscreen-video-wrap video{
+	position: relative;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.header-overlay{
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.header-content{
+	z-index:2;
+}
+
+.header-content h1{
+	font-size: 50px;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+@margin(max-width:960px){
+	.container{
+		padding-right:3rem;
+		padding-left:3rem;
+	}
+}
+
 /*-- /banner --*/
 /*-- rupes --*/
 .rup-left {
@@ -774,13 +831,13 @@ i.fa.fa-gift{
     min-height: 430px;
 }
 .banner-3 {
-    background: url(../images/banner.jpg)no-repeat;
+    background: url(../images/banner2.png)no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
     -ms-background-size: cover;
     -moz-background-size: cover;
-    min-height:200px;
+    min-height:430px;
 }
 .banner-2 h1 {
     font-size: 50px;
@@ -794,7 +851,7 @@ i.fa.fa-gift{
     margin-bottom: 40px;
     padding: 1.5em 0 0;
     text-align: center;
-    color: #fff;
+    color: black;
 }
 .hotes-left {
     text-align: center;
@@ -2115,7 +2172,7 @@ a.fa fa-facebook {
 .footer-social-icons ul li a.facebook {
 	background-position:0px 0px;
 }
-.footer-social-icons ul li a.facebook:hover {
+.footer-0social-icons ul li a.facebook:hover {
 	background-position:-0px -30px;
 }
 .footer-social-icons ul li a.instagram {
@@ -2289,87 +2346,144 @@ ul.nav.navbar-nav li a {
     margin: 0 6px;
     font-size: 14px;
 }
+
 ul.nav.navbar-nav li a {
     font-size: 14px;
     padding: 5px 7px;
 }
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-menu {
+	display: none;
+	position: absolute;
+	background: linear-gradient(to right,
+		#a4673e, #daa87e, #b6774f,	#a4673e, #daa87e, #b6774f, 	#a4673e) !important;
+	min-width: 40px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-menu li a {
+	color: white;
+	padding: 12px 16px;
+	font-size: 16px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.dropdown-menu li a:hover {
+	background-color: #555;
+}
+
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
+
 .banner h1 {
     padding: 2.8em 0 0;
 	font-size: 46px;
 }
+
 .banner {
     min-height: 320px;
 }
+
 .bann-info1 {
     padding: 4em 5em 0em;
 }
+
 .rupes {
     padding: 3em 0;
 }
+
 i.fa.fa-h-square,i.fa.fa-usd,i.fa.fa-mobile {
     font-size: 4em;
 }
+
 .rupes h4 {
     font-size: 18px;
     line-height: 1.5em;
 }
+
 .holiday {
     padding: 3em 0;
 }
+
 .holiday h3 {
     font-size: 1.7em;
 }
+
 .holiday p {
     font-size: 1em;
 }
+
 .track {
     padding: 3em 0;
 }
+
 .track h3 {
     font-size: 1.7em;
 }
+
 .track p {
     font-size: 1em;
 }
+
 a.learn {
     padding: 6px 20px!important;
     font-size: 15px;
 }
+
 .routes {
     padding: 3em 0;
 }
+
 i.fa.fa-truck, i.fa.fa-user, i.fa.fa-ticket {
     font-size: 3em;
 }
+
 .routes p {
     font-size: 1em;
 }
+
 .routes h3 {
     font-size: 1.7em;
 }
+
 button.seabtn {
     padding: 6px 20px!important;
     font-size: 15px;
 }
+
 .faq p {
     font-size: 15px;
 }
+
 .faq li {
     font-size: 15px;
 }
+
 .faq {
     padding: 3em 0;
 }
+
 .faq h2 {
     font-size: 1.8em;
 }
+
 .faq h3 {
     font-size: 1.5em;
 }
+
 .banner-1 h1,.banner-2 h1,.banner-3 h1 {
     padding: 1.8em 0 0;
     font-size: 46px;
 }
+
 .about {
     padding: 3em 0;
 }
