@@ -12,11 +12,6 @@ $pid=intval($_GET['pid']);
 if(isset($_POST['submit']))
 {
 $pname=$_POST['photoname'];
-//$ptype=$_POST['phototype'];
-// $plocation=$_POST['layoutlocation'];
-// $pprice=$_POST['layoutprice'];
-// $pfeatures=$_POST['layoutfeatures'];
-// $pdetails=$_POST['layoutdetails'];
 $pimage=$_FILES["danceimage"]["name"];
 move_uploaded_file($_FILES["danceimage"]["tmp_name"],"danceimages/".$_FILES["danceimage"]["name"]);
 $sql="update tblphotos set PhotoName=:pname, danceImage=:pimage where PhotoId=:pid";
@@ -115,16 +110,11 @@ foreach($results as $result)
 										<input type="text" class="form-control1" name="photoname" id="photoname" placeholder="Create Photos" value="<?php echo htmlentities($result->PhotoName);?>" required>
 									</div>
 								</div>
-<!-- <div class="form-group">
-									<label for="focusedinput" class="col-sm-2 control-label">Layout Details</label>
-									<div class="col-sm-8">
-										<textarea class="form-control" rows="5" cols="50" name="layoutdetails" id="layoutdetails" placeholder="Layout Details" required><?php echo htmlentities($result->LayoutDetails);?></textarea>
-									</div> -->
-								<!-- </div> -->
+
 <div class="form-group">
 <label for="focusedinput" class="col-sm-2 control-label">Dance Image</label>
 <div class="col-sm-8">
-<img src="danceimages/<?php echo htmlentities($result->DanceImage);?>" width="200">&nbsp;&nbsp;&nbsp;<a href="change-dimage.php?imgid=<?php echo htmlentities($result->PhotoId);?>">Change Image</a>
+<img src="danceimages/<?php echo htmlentities($result->DanceImage);?>" width="200">
 </div>
 </div>
 <div class="form-group">

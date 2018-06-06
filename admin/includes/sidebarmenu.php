@@ -19,7 +19,8 @@
 									 <li><a href="manage-events.php"><i class="fa fa-table"></i>  <span>Manage Events</span><div class="clearfix"></div></a></li>
 									<li><a href="manage-vdos.php"><i class="fa fa-table" aria-hidden="true"></i>  <span>Manage VDOs</span><div class="clearfix"></div></a></li>
 									<li><a href="manage-pages.php"><i class="fa fa-file-text-o" aria-hidden="true"></i>  <span>About us</span><div class="clearfix"></div></a></li>
-									<li><a href="contact-us.php"><i class="fa fa-file-text-o" aria-hidden="true"></i>  <span>Contact us</span><div class="clearfix"></div></a></li>
+									<li><a href="update-contactinfo.php"><i class="fa fa-file-text-o" aria-hidden="true"></i>  <span>Contact us</span><div class="clearfix"></div></a></li>
+									<li><a href="manage-contactusquery.php"><i class="fa fa-file-text-o" aria-hidden="true"></i>  <span>Query from students</span><div class="clearfix"></div></a></li>
 
 
 								  </ul>

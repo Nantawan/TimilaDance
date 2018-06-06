@@ -422,7 +422,8 @@ i.fa.fa-truck,i.fa.fa-user,i.fa.fa-ticket {
     color:#4CFF00;
 }
 .footer-btm {
-    background:linear-gradient(to right, 	#a4673e, #daa87e, #b6774f,	#a4673e, #daa87e, #b6774f, 	#a4673e) !important;
+    background:linear-gradient(to right, 	#a4673e, #daa87e, #b6774f,	#a4673e, #daa87e, #b6774f, 	#a4673e);
+		background: black;
     padding: 0.5em 0;
 	text-align:center;
 }
@@ -1048,9 +1049,6 @@ select {
 }
 /*-- /agent --*/
 /*-- contact --*/
-#contactus {
-	margin-top: 80px;
-}
 
 .contact {
     padding: 5em 0;
@@ -1076,6 +1074,7 @@ select {
 .con-top {
     margin-top: 2em;
 }
+
 /*-- /contact --*/
 /*-- details --*/
 .details-middle li {
@@ -2076,21 +2075,10 @@ ul.paging{
 	display:inline-block;
 	position: relative;
 }
-.facebook{
-	background: url('../images/facebook.png') no-repeat 0px 0px;
-	display:inline-block;
-	position: relative;
+a.fa fa-facebook {
+	color: #fff;
 }
-.instagram{
-	background: url('../images/IG.png') no-repeat 0px 0px;
-	display:inline-block;
-	position: relative;
-}
-.youtube{
-	background: url('../images/YouTube.png') no-repeat 0px 0px;
-	display:inline-block;
-	position: relative;
-}
+
 .footer-social-icons ul li a span {
     color: #fff;
     position: absolute;
@@ -4407,7 +4395,7 @@ ul.set-1 {
     -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
     box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
 }
-//photosList
+/*-- photolist page --*/
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -4420,4 +4408,31 @@ ul.set-1 {
   padding: 20px;
   font-size: 30px;
   text-align: center;
+}
+/*-- contact info page --*/
+.icon_wrap .fa {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #e6e5e5;
+  border-radius: 50%;
+  color: #555;
+  display: inline-block;
+  font-size: 22px;
+  height: 44px;
+  line-height: 44px;
+  margin-right: 15px;
+  text-align: center;
+  vertical-align: middle;
+  width: 44px;
+}
+.contact_info_m, .icon_wrap {
+	display:table-cell;
+	vertical-align:middle;
+
+}
+.map_wrap {
+	margin:40px 0 0;
+}
+.map_wrap iframe {
+	width:100%;
+	height:420px;
 }

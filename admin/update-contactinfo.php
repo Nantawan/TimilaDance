@@ -3,15 +3,15 @@ session_start();
 error_reporting(0);
 include('includes/config.php');
 if(strlen($_SESSION['alogin'])==0)
-	{	
+	{
 header('location:index.php');
 }
 else{
-// Code for change password	
+// Code for change password
 if(isset($_POST['submit']))
 {
 $address=$_POST['address'];
-$email=$_POST['email'];	
+$email=$_POST['email'];
 $contactno=$_POST['contactno'];
 $sql="update tblcontactusinfo set Address=:address,EmailId=:email,ContactNo=:contactno";
 $query = $dbh->prepare($sql);
@@ -19,7 +19,7 @@ $query->bindParam(':address',$address,PDO::PARAM_STR);
 $query->bindParam(':email',$email,PDO::PARAM_STR);
 $query->bindParam(':contactno',$contactno,PDO::PARAM_STR);
 $query->execute();
-$msg="Info Updateed successfully";
+$msg="Address updated successfully";
 }
 ?>
 
@@ -33,26 +33,23 @@ $msg="Info Updateed successfully";
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
-	
-	<title>Car Rental Portal | Admin Create Brand</title>
 
-	<!-- Font awesome -->
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<!-- Sandstone Bootstrap CSS -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<!-- Bootstrap Datatables -->
-	<link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
-	<!-- Bootstrap social button library -->
-	<link rel="stylesheet" href="css/bootstrap-social.css">
-	<!-- Bootstrap select -->
-	<link rel="stylesheet" href="css/bootstrap-select.css">
-	<!-- Bootstrap file input -->
-	<link rel="stylesheet" href="css/fileinput.min.css">
-	<!-- Awesome Bootstrap checkbox -->
-	<link rel="stylesheet" href="css/awesome-bootstrap-checkbox.css">
-	<!-- Admin Stye -->
-	<link rel="stylesheet" href="css/style.css">
-  <style>
+	<title>Timila Dance Academy | Admin Update Contact Information</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Pooled Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" href="css/morris.css" type="text/css"/>
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<link href='//fonts.googleapis.com/css?family=Roboto:700,500,300,100italic,100,400' rel='stylesheet' type='text/css'/>
+	<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/icon-font.min.css" type='text/css' />
+
+		<style>
 		.errorWrap {
     padding: 10px;
     margin: 0 0 20px 0;
@@ -75,26 +72,33 @@ $msg="Info Updateed successfully";
 </head>
 
 <body>
-	<?php include('includes/header.php');?>
-	<div class="ts-main-content">
-	<?php include('includes/leftbar.php');?>
-		<div class="content-wrapper">
-			<div class="container-fluid">
+	<div class="page-container">
+ 	 <!--/content-inner-->
+ <div class="left-content">
+ 		 <div class="mother-grid-inner">
+ 							<!--header start here-->
+ <?php include('includes/header.php');?>
+ <div class="clearfix"> </div>
+ </div>
+
+ 	<?php include('includes/sidebarmenu.php');?>
+ 	<div class="content-wrapper">
+ 		<div class="container-fluid">
 
 				<div class="row">
 					<div class="col-md-12">
-					
+
 						<h2 class="page-title">Update Contact Info</h2>
 
 						<div class="row">
 							<div class="col-md-10">
 								<div class="panel panel-default">
-									<div class="panel-heading">Form fields</div>
+									<div class="panel-heading">Click and input data in each field and click update button.</div>
 									<div class="panel-body">
 										<form method="post" name="chngpwd" class="form-horizontal" onSubmit="return valid();">
-										
-											
-  	        	  <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
+
+
+  	        	  <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php }
 				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
 				<?php $sql = "SELECT * from  tblcontactusinfo ";
 $query = $dbh -> prepare($sql);
@@ -104,7 +108,7 @@ $cnt=1;
 if($query->rowCount() > 0)
 {
 foreach($results as $result)
-{				?>	
+{				?>
 
 				<div class="form-group">
 												<label class="col-sm-4 control-label"> Address</label>
@@ -126,13 +130,13 @@ foreach($results as $result)
 											</div>
 <?php }} ?>
 											<div class="hr-dashed"></div>
-											
-										
-								
-											
+
+
+
+
 											<div class="form-group">
 												<div class="col-sm-8 col-sm-offset-4">
-								
+
 													<button class="btn btn-primary" name="submit" type="submit">Update</button>
 												</div>
 											</div>
@@ -142,29 +146,25 @@ foreach($results as $result)
 									</div>
 								</div>
 							</div>
-							
+
 						</div>
-						
-					
+
+
 
 					</div>
 				</div>
-				
-			
+
+
 			</div>
 		</div>
 	</div>
+</div>
 
-	<!-- Loading Scripts -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap-select.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.dataTables.min.js"></script>
-	<script src="js/dataTables.bootstrap.min.js"></script>
-	<script src="js/Chart.min.js"></script>
-	<script src="js/fileinput.js"></script>
-	<script src="js/chartData.js"></script>
-	<script src="js/main.js"></script>
+<!--js -->
+<script src="js/jquery.nicescroll.js"></script>
+<script src="js/scripts.js"></script>
+<!-- Bootstrap Core JavaScript -->
+   <script src="js/bootstrap.min.js"></script>
 
 </body>
 

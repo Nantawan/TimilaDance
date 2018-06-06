@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 error_reporting(0);
@@ -59,21 +60,8 @@ $error="Something went wrong. Please try again";
 <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 <!--Custome Style -->
 <link rel="stylesheet" href="css/style.css" type="text/css">
-<!--OWL Carousel slider-->
-<link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
-<link rel="stylesheet" href="css/owl.transitions.css" type="text/css">
-<!--slick-slider -->
-<link href="css/slick.css" rel="stylesheet">
-<!--bootstrap-slider -->
-<link href="css/bootstrap-slider.min.css" rel="stylesheet">
-<!--FontAwesome Font Style -->
-<link href="css/font-awesome.min.css" rel="stylesheet">
 
-<!-- Fav and touch icons -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/favicon-icon/apple-touch-icon-144-precomposed.png">
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/favicon-icon/apple-touch-icon-114-precomposed.html">
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/favicon-icon/apple-touch-icon-72-precomposed.png">
-<link rel="apple-touch-icon-precomposed" href="images/favicon-icon/apple-touch-icon-57-precomposed.png">
+
 <link rel="shortcut icon" href="images/favicon-icon/favicon.png">
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
  <style>
@@ -109,10 +97,10 @@ $error="Something went wrong. Please try again";
 
 <!--Page Header-->
 <section class="page-header contactus_page">
-  <div class="container" id="contactus">
+  <div class="container">
     <div class="page-header_wrap">
       <div class="page-heading">
-        <h1>Contact Us</h1>
+        <h1><center>Contact Us</center></h1>
       </div>
     </div>
   </div>
@@ -170,20 +158,22 @@ foreach($results as $result)
 { ?>
           <ul style="list-style-type:none">
             <li>
+
               <div class="icon_wrap"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-              <div class="contact_info_m"><?php   echo htmlentities($result->Address); ?></div>
+                <div class="contact_info_m"><?php   echo htmlentities($result->Address); ?></div>
+
             </li>
             <li>
               <div class="icon_wrap"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
-              <div class="contact_info_m"><a href="tel:61-1234-567-90"><?php   echo htmlentities($result->EmailId); ?></a></div>
+              <div class="contact_info_m"><a href="mailto:contact@exampleurl.com"><?php   echo htmlentities($result->EmailId); ?></a></div>
             </li>
             <li>
               <div class="icon_wrap"><i class="fa fa-phone" aria-hidden="true"></i></div>
-              <div class="contact_info_m"><a href="mailto:contact@exampleurl.com"><?php   echo htmlentities($result->ContactNo); ?></a></div>
+              <div class="contact_info_m"><?php   echo htmlentities($result->ContactNo); ?></a></div>
             </li>
             <li>
-              <div class="map">
-                <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBe7MULkDHVS4wKdxJsXgATQvSm8DaXsbg'></script><div style='overflow:hidden;height:400px;width:520px;'><div id='gmap_canvas' style='height:400px;width:520px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://addmap.net/'>Visit us</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=d17a051ee46a02d92f4214583b589ba6d374a6dc'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(-43.5349527,172.64713670000003),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-43.5349527,172.64713670000003)});infowindow = new google.maps.InfoWindow({content:'<strong>Rent a Car Map</strong><br>289 Tuam Street, <br>8081 Christchurch<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+
+                <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBe7MULkDHVS4wKdxJsXgATQvSm8DaXsbg'></script><div style='overflow:hidden;height:230px;width:520px;'><div id='gmap_canvas' style='height:400px;width:520px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://embedmap.org/'>how to embed google map</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=9dae5f04754c8a9dc047de217f9f65a1c19d72df'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(-43.563182,172.6259907),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-43.563182,172.6259907)});infowindow = new google.maps.InfoWindow({content:'<strong>Timila Dance Academy</strong><br>5 Somerfield St, Somerfield, <br>8024  Christchurch,<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
               </li>
 
           </ul>
@@ -205,30 +195,11 @@ foreach($results as $result)
 <div id="back-top" class="back-top"> <a href="#top"><i class="fa fa-angle-up" aria-hidden="true"></i> </a> </div>
 <!--/Back to top-->
 
-<!--Login-Form -->
-<?php include('includes/login.php');?>
-<!--/Login-Form -->
-
-<!--Register-Form -->
-<?php include('includes/registration.php');?>
-
-<!--/Register-Form -->
-
-<!--Forgot-password-Form -->
-<?php include('includes/forgotpassword.php');?>
-<!--/Forgot-password-Form -->
 
 <!-- Scripts -->
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/interface.js"></script>
-<!--Switcher-->
-<script src="switcher/js/switcher.js"></script>
-<!--bootstrap-slider-JS-->
-<script src="js/bootstrap-slider.min.js"></script>
-<!--Slider-JS-->
-<script src="js/slick.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
+
 
 </body>
 

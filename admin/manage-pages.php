@@ -120,14 +120,14 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 						<div class="tab-pane active" id="horizontal-form">
 							<form class="form-horizontal" name="package" method="post" enctype="multipart/form-data">
 								<div class="form-group">
-									<label for="focusedinput" class="col-sm-2 control-label">Select page</label>
-									<div class="col-sm-8">
-									   <select name="menu1" onChange="MM_jumpMenu('parent',this,0)">
-                  <option value="" selected="selected" class="form-control">***Select One***</option>
+									<label for="focusedinput" class="col-sm-2 control-label"></label>
+									<div class="col-sm-2">
+									   <!-- <select name="menu1" onChange="MM_jumpMenu('parent',this,0)"> -->
+                  <!-- <option value="" selected="selected" class="form-control">***Select One***</option> -->
                   <!-- <option value="manage-pages.php?type=terms">Terms and Condtions</option> -->
-									<option value="manage-pages.php?type=privacy">Privacy policy</option>
+									<!-- <option value="manage-pages.php?type=privacy">Privacy policy</option> -->
                   <!-- <option value="manage-pages.php?type=location">Location</option> -->
-                  <option value="manage-pages.php?type=aboutus">About us</option>
+                  <h4><option value="manage-pages.php?type=aboutus"><h4> Input data by clicking in the text area and paste required data</option></h4>
                   <!-- <option value="manage-pages.php?type=contact">Contact Us</option> -->
                 </select>
 									</div>
@@ -143,38 +143,9 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 				// 					echo "Term and Conditions";
 				// 					break;
 
-				case "privacy" :
-									echo "Privacy And Policy";
-									break;
-
 				case "aboutus" :
 									echo "About";
 									break;
-				// case "location" ://software
-				// 					echo "Location";//Offers
-				// 					break;
-				// case "aspnet" :
-				// 					echo "Vision And MISSION";
-				// 					break;
-				// case "objectives" :
-				// 					echo "Objectives";
-				// 					break;
-				// case "disclaimer" :
-				// 					echo "Disclaimer";
-				// 					break;
-				// case "vbnet" :
-				// 					echo "Partner With Us";
-				// 					break;
-				// case "candc" :
-				// 					echo "Super Brand";
-				// 					break;
-				// case "contact" :
-				// 					echo "Contact us";
-									break;
-
-
-
-
 				default :
 								echo "";
 								break;
@@ -186,7 +157,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 
 
 			?>
-									<!-- </div> -->
+									</div>
 								</div>
 
 
@@ -195,8 +166,8 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 
 
 <div class="form-group">
-									<label for="focusedinput" class="col-sm-2 control-label">Input data by clicking in the text area and paste required data</label>
-									<div class="col-sm-8">
+									<!-- <label for="focusedinput" class="col-sm-2 control-label">Input data by clicking in the text area and paste required data</label>
+									<div class="col-sm-8"> -->
 
 
 										<textarea class="form-control" rows="5" cols="50" name="pgedetails" id="pgedetails" placeholder="Package Details" required>

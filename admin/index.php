@@ -12,6 +12,7 @@ $query-> bindParam(':password', $password, PDO::PARAM_STR);
 $query-> execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
 if($query->rowCount() > 0)
+//check Admin login
 {
 $_SESSION['alogin']=$_POST['username'];
 echo "<script type='text/javascript'> document.location = 'dashboard.php'; </script>";
@@ -28,7 +29,7 @@ echo "<script type='text/javascript'> document.location = 'dashboard.php'; </scr
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Aspire | Admin Sign in</title>
+<title>Timila Dance Academy | Admin Sign in</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -36,8 +37,7 @@ echo "<script type='text/javascript'> document.location = 'dashboard.php'; </scr
 <link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
 <!-- Custom CSS -->
 <link href="css/style.css" rel='stylesheet' type='text/css' />
-<link rel="stylesheet" href="css/morris.css" type="text/css"/>
-<!-- Graph CSS -->
+<link rel="stylesheet" href="css/morris.css" type="text/css"/><!-- Graph CSS -->
 <link href="css/font-awesome.css" rel="stylesheet">
 <link rel="stylesheet" href="css/jquery-ui.css">
 <!-- jQuery -->

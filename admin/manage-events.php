@@ -86,12 +86,12 @@ else{
 						<thead>
 						  <tr>
 						  <th>#</th>
-							<th>Events Name</th>
+							<th>Event Name</th>
 							<th>Action</th>
 						  </tr>
 						</thead>
 						<tbody>
-<?php $sql = "SELECT * from tblevent";
+<?php $sql = "SELECT * from tblphotos";
 $query = $dbh -> prepare($sql);
 //$query -> bindParam(':city', $city, PDO::PARAM_STR);
 $query->execute();
@@ -103,7 +103,7 @@ foreach($results as $result)
 {				?>
 						  <tr>
 							<td><?php echo htmlentities($cnt);?></td>
-							<td><?php echo htmlentities($result->EventName);?></td>
+							<td><?php echo htmlentities($result->PhotoName);?></td>
 
 							<td><a href="update-events.php?pid=<?php echo htmlentities($result->PhotoId);?>"><button type="button" class="btn btn-primary btn-block">View Details</button></a></td>
 						  </tr>

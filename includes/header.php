@@ -68,7 +68,7 @@
 				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 					<nav class="cl-effect-1">
 						<ul class="nav navbar-nav">
-							<li><a class="navbar-brand" href="index.php"><img src="images/Logo.png" style="width: 7rem"></a></li>
+							<li><a class="navbar-brand" href="index.php"><img src="images/Logo_vintage.png" style="width: 7rem"></a></li>
 							<li><a href="index.php">Home</a></li>
 							<li><a href="page.php?type=aboutus">About Us</a></li>
 								<!-- <li><a href="package-list.php">Booking</a></li> -->
