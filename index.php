@@ -30,16 +30,28 @@ include('includes/config.php');
 </head>
 <body>
 <?php include('includes/header.php');?>
+<header class="v-header container">
+	<div class="fullscreen-video-wrap">
+<video src="./images/diwali-cut.mp4" autoplay="true" loop="true" muted>
+	Your browser does not support mp4 videos, change browser!
+</video>
+</div>
+<div class="header-overlay"></div>
+<div class="header-content">
+	<h1 align="center">Welcome! We're new in Christchurch</h1>
+	</div>
+</header>
+
 <!--banner photo section-->
-<div class="banner">
+<!-- <div class="banner">
 	<div class="container">
 		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">TIMILA DANCE ACADEMY</h1>
 	</div>
-</div>
+</div> --!>
 
 
 <!--- rupes ---->
-<div class="container">
+<!-- <div class="container">
 	<div class="rupes">
 		<div class="col-md-4 rupes-left wow fadeInDown animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">
 			<div class="rup-left">
@@ -76,24 +88,16 @@ include('includes/config.php');
 		</div>
 
 	</div>
-</div>
+</div> --!>
 <!--- /rupes ---->
 
-
-
-
-<!---holiday---->
 <div class="container">
 	<div class="holiday">
-
-
-
-
 
 	<h3>Dance Class </h3>
 
 
-<?php $sql = "SELECT * from tbltourpackages order by rand() limit 4";
+<?php $sql = "SELECT * from tbldlessons order by rand() limit 3";
 $query = $dbh->prepare($sql);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
@@ -104,12 +108,12 @@ foreach($results as $result)
 {	?>
 			<div class="rom-btm">
 				<div class="col-md-3 room-left wow fadeInLeft animated" data-wow-delay=".5s">
-					<img src="admin/pacakgeimages/<?php echo htmlentities($result->PackageImage);?>" class="img-responsive" alt="">
+					<img src="admin/lessonimages/<?php echo htmlentities($result->PackageImage);?>" class="img-responsive" alt="">
 				</div>
 				<div class="col-md-6 room-midle wow fadeInUp animated" data-wow-delay=".5s">
-					<h4>Package Name: <?php echo htmlentities($result->PackageName);?></h4>
-					<h6>Package Type : <?php echo htmlentities($result->PackageType);?></h6>
-					<p><b>Package Location :</b> <?php echo htmlentities($result->PackageLocation);?></p>
+					<h4>Class: <?php echo htmlentities($result->PackageName);?></h4>
+					<h6>Date : <?php echo htmlentities($result->PackageType);?></h6>
+					<p><b>Location :</b> <?php echo htmlentities($result->PackageLocation);?></p>
 					<p><b>Features</b> <?php echo htmlentities($result->PackageFetures);?></p>
 				</div>
 				<div class="col-md-3 room-right wow fadeInRight animated" data-wow-delay=".5s">
@@ -121,50 +125,9 @@ foreach($results as $result)
 
 <?php }} ?>
 
-
-<div><a href="package-list.php" class="view">View More Packages</a></div>
 </div>
 			<div class="clearfix"></div>
 	</div>
-
-
-
-<!--- routes ---->
-<div class="routes">
-	<div class="container">
-		<div class="col-md-4 routes-left wow fadeInRight animated" data-wow-delay=".5s">
-			<div class="rou-left">
-				<a href="#"><i class="glyphicon glyphicon-list-alt"></i></a>
-			</div>
-			<div class="rou-rgt wow fadeInDown animated" data-wow-delay=".5s">
-				<h3>8000</h3>
-				<p>Enquiries</p>
-			</div>
-				<div class="clearfix"></div>
-		</div>
-		<div class="col-md-4 routes-left">
-			<div class="rou-left">
-				<a href="#"><i class="fa fa-user"></i></a>
-			</div>
-			<div class="rou-rgt">
-				<h3>1900</h3>
-				<p>Registered users</p>
-			</div>
-				<div class="clearfix"></div>
-		</div>
-		<div class="col-md-4 routes-left wow fadeInRight animated" data-wow-delay=".5s">
-			<div class="rou-left">
-				<a href="#"><i class="fa fa-ticket"></i></a>
-			</div>
-			<div class="rou-rgt">
-				<h3>70000+</h3>
-				<p>Booking</p>
-			</div>
-				<div class="clearfix"></div>
-		</div>
-		<div class="clearfix"></div>
-	</div>
-</div>
 
 <?php include('includes/footer.php');?>
 <!-- signup -->

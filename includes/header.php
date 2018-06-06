@@ -17,22 +17,8 @@
 		<div class="clearfix"></div>
 	</div>
 </div><?php } else {?>
-<div class="top-header">
-	<div class="container">
-		<ul class="tp-hd-lft wow fadeInLeft animated" data-wow-delay=".5s">
-			<li class="hm"><a href="index.php"><i class="fa fa-home"></i></a></li>
-				<li class="hm"><a href="admin/index.php">Admin Login</a></li>
-		</ul>
-		<ul class="tp-hd-rgt wow fadeInRight animated" data-wow-delay=".5s">
-			<li class="tol">Contact Timila : 022-620-9744</li>
-			<li class="sig"><a href="#" data-toggle="modal" data-target="#myModal" >Sign Up</a></li>
-			<li class="sigi"><a href="#" data-toggle="modal" data-target="#myModal4" >/ Sign In</a></li>
-        </ul>
-		<div class="clearfix"></div>
-	</div>
-</div>
+
 <?php }?>
-<!--- /top-header ---->
 <!--- header ---->
 <!-- <div class="header">
 	<div class="container">
@@ -53,7 +39,9 @@
 <!--- footer-btm ---->
 <!-- <div class="footer-btm wow fadeInLeft animated" data-wow-delay=".5s"> -->
 	<!-- <div class="container"> -->
-	<div class="navigation footer-btm wow fadeInLeft animated" data-wow-delay=".5s">
+	<div class="navigation footer-btm wow fadeInLeft animated" data-wow-delay=".5s"
+	style="visibility:visible; animation-delay:0.5s; animation-name: fadeInLeft; position: absolute;
+	z-index: 99; width: 100%;">
 			<nav class="navbar navbar-default container">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<!-- <div class="navbar-header">
@@ -70,11 +58,14 @@
 						<ul class="nav navbar-nav">
 							<li><a class="navbar-brand" href="index.php"><img src="images/Logo.png" style="width: 7rem"></a></li>
 							<li><a href="index.php">Home</a></li>
-							<!-- <li><a href="page.php?type=aboutus">About</a></li>
-								<li><a href="package-list.php">Booking</a></li>
-								<li><a href="layout-list.php">Course Layout</a></li>
-								<li><a href="page.php?type=terms">Membership</a></li>
-								<li><a href="page.php?type=contact">Pro Shop</a></li> -->
+							<li><a href="page.php?type=aboutus">About Us</a></li>
+								<li class="dropdown"><a href="#" data-toggle="dropdown" aria haspopup="true" aria-expanded="false" aria-hidden="true">Dance Galleries</a>
+								<ul class="dropdown-menu">
+									<li><a href=" ">Photos</a></li>
+									<li><a href="package-list.php">Videos</a></li>
+								</ul>
+								</li>
+								<li><a href="layout-list.php">Contact Us</a></li>
 								<!-- <?php if($_SESSION['login'])
 {?>
 								<li><a href="#" data-toggle="modal" data-target="#myModal3">  Write Us </a>  </li>

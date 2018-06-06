@@ -6,7 +6,7 @@ include('includes/config.php');
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Aspire Golf  | Package List</title>
+<title>Timila Dance Academy  | List of Lessons</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="applijewelleryion/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -32,7 +32,7 @@ include('includes/config.php');
 <!--- banner ---->
 <div class="banner-3">
 	<div class="container">
-		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"> Aspire Golf- Package List</h1>
+		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"> Timila Dance Academy Videos</h1>
 	</div>
 </div>
 <!--- /banner ---->
@@ -41,8 +41,12 @@ include('includes/config.php');
 	<div class="container">
 
 		<div class="room-bottom">
-			<h3>Package List</h3>
+			<h3>Events</h3>
 
+			<div class="video_gallery_container">
+				<a class="videoLink" videowidth="800" videoheight="450" videofile="cycling_large" videocaption="Video caption goes here"></a>
+				<div class="clear_both"></div>
+			</div>
 
 <?php $sql = "SELECT * from tbltourpackages";
 $query = $dbh->prepare($sql);

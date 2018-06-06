@@ -7,18 +7,18 @@
 									<ul id="menu" >
 										<li><a href="dashboard.php"><i class="fa fa-tachometer"></i> <span>Dashboard</span><div class="clearfix"></div></a></li>
 
-									 <li id="menu-academico" ><a href="#"><i class="fa fa-list-ul" aria-hidden="true"></i><span> Club Packages</span> <span class="fa fa-angle-right" style="float: right"></span><div class="clearfix"></div></a>
+									 <li id="menu-academico" ><a href="#"><i class="fa fa-list-ul" aria-hidden="true"></i><span> Dance Lessons</span> <span class="fa fa-angle-right" style="float: right"></span><div class="clearfix"></div></a>
 										  <ul id="menu-academico-sub" >
-										   <li id="menu-academico-avaliacoes" ><a href="create-package.php">Create</a></li>
-											 <li id="menu-academico-avaliacoes" ><a href="manage-packages.php">Manage</a></li>
+										   <li id="menu-academico-avaliacoes" ><a href="create-lessons.php">Create</a></li>
+											 <li id="menu-academico-avaliacoes" ><a href="manage-lessons.php">Manage</a></li>
 										  </ul>
 										</li>
 
 									<li id="menu-academico" ><a href="manage-users.php"><i class="fa fa-file-text-o" aria-hidden="true"></i><span>Manage Users</span><div class="clearfix"></div></a></li>
 
-									<li><a href="manage-bookings.php"><i class="fa fa-list" aria-hidden="true"></i>  <span>Manage Booking</span><div class="clearfix"></div></a></li>
-									<li><a href="manage-layouts.php"><i class="fa fa-file-text-o" aria-hidden="true"></i>  <span>Manage Layouts</span><div class="clearfix"></div></a></li>
-									 <li><a href="manageissues.php"><i class="fa fa-table"></i>  <span>Manage Issues</span><div class="clearfix"></div></a></li>
+									<li><a href="manage-bookings.php"><i class="fa fa-list" aria-hidden="true"></i>  <span>Manage Bookings</span><div class="clearfix"></div></a></li>
+									<li><a href="manage-photos.php"><i class="fa fa-file-text-o" aria-hidden="true"></i>  <span>Manage Photos</span><div class="clearfix"></div></a></li>
+									 <li><a href="manage-events.php"><i class="fa fa-table"></i>  <span>Manage Events</span><div class="clearfix"></div></a></li>
 									<li><a href="manage-enquires.php"><i class="fa fa-file-text-o" aria-hidden="true"></i>  <span>Manage Enquiries</span><div class="clearfix"></div></a></li>
 									<li><a href="manage-pages.php"><i class="fa fa-file-text-o" aria-hidden="true"></i>  <span>Manage Pages</span><div class="clearfix"></div></a></li>
 
