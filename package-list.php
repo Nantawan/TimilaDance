@@ -6,11 +6,7 @@ include('includes/config.php');
 <!DOCTYPE HTML>
 <html>
 <head>
-<<<<<<< HEAD:package-list.php
 <title>Timila Dance Academy  | List of Lessons</title>
-=======
-<title>Timila Dance Academy | Lessons List</title>
->>>>>>> 5eb73ad6d17cff5cca7d1d9a77b46def921a1ef7:lessons-list.php
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="applijewelleryion/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -46,6 +42,11 @@ include('includes/config.php');
 
 		<div class="room-bottom">
 			<h3>Events</h3>
+
+			<section class="section_area">
+				<div class="container">
+					<div class="row-fluid">
+
 
 			<div class="video_gallery_container">
 				<a class="videoLink" videowidth="800" videoheight="450" videofile="cycling_large" videocaption="Video caption goes here"></a>

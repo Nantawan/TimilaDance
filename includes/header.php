@@ -17,6 +17,10 @@
 		<!-- <div class="clearfix"></div>
 	</div>
 </div><?php } else {?>
+<<<<<<< HEAD
+
+<?php }?>
+=======
 <!-- <div class="top-header">
 	<div class="container">
 		<!-- <ul class="tp-hd-lft wow fadeInLeft animated" data-wow-delay=".5s">
@@ -33,6 +37,7 @@
 </div>
 <?php }?>  -->
 <!--- /top-header ---->
+>>>>>>> 5eb73ad6d17cff5cca7d1d9a77b46def921a1ef7
 <!--- header ---->
 <!-- <div class="header">
 	<div class="container">
@@ -53,7 +58,9 @@
 <!--- footer-btm ---->
 <!-- <div class="footer-btm wow fadeInLeft animated" data-wow-delay=".5s"> -->
 	<!-- <div class="container"> -->
-	<div class="navigation footer-btm wow fadeInLeft animated" data-wow-delay=".5s">
+	<div class="navigation footer-btm wow fadeInLeft animated" data-wow-delay=".5s"
+	style="visibility:visible; animation-delay:0.5s; animation-name: fadeInLeft; position: absolute;
+	z-index: 99; width: 100%;">
 			<nav class="navbar navbar-default container">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<!-- <div class="navbar-header">
@@ -71,10 +78,21 @@
 							<li><a class="navbar-brand" href="index.php"><img src="images/Logo_vintage.png" style="width: 7rem"></a></li>
 							<li><a href="index.php">Home</a></li>
 							<li><a href="page.php?type=aboutus">About Us</a></li>
+<<<<<<< HEAD
+								<li class="dropdown"><a href="#" data-toggle="dropdown" aria haspopup="true" aria-expanded="false" aria-hidden="true">Dance Galleries</a>
+								<ul class="dropdown-menu">
+									<li><a href=" ">Photos</a></li>
+									<li><a href="package-list.php">Videos</a></li>
+								</ul>
+								</li>
+								<li><a href="layout-list.php">Contact Us</a></li>
+								<!-- <?php if($_SESSION['login'])
+=======
 								<!-- <li><a href="package-list.php">Booking</a></li> -->
 								<li><a href="photoList.php">Dance Galleries</a></li>
 								<li><a href="contact-us.php">Contact us</a></li>
 								<?php if($_SESSION['login'])
+>>>>>>> 5eb73ad6d17cff5cca7d1d9a77b46def921a1ef7
 {?>
 								<li><a href="#" data-toggle="modal" data-target="#myModal3">  Write Us </a>  </li>
 								<?php } else { ?>

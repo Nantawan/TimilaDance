@@ -29,7 +29,11 @@ echo "<script type='text/javascript'> document.location = 'dashboard.php'; </scr
 <!DOCTYPE HTML>
 <html>
 <head>
+<<<<<<< HEAD
+<title>TDA | Admin Sign in</title>
+=======
 <title>Timila Dance Academy | Admin Sign in</title>
+>>>>>>> 5eb73ad6d17cff5cca7d1d9a77b46def921a1ef7
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>

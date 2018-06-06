@@ -16,6 +16,10 @@
 				<li><a href="https://www.youtube.com/channel/UC3_LDxwp4ykJKl7ChO6ES5w" class="fa fa-youtube fa-2x" style="color:black"></a></li>
 			</ul>
 		</div>
+<<<<<<< HEAD
+		<p class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">© 2018 Timila Dance Academy. All Rights Reserved </p>
+=======
 		<p class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">© 2018 Timila Dance Academy . All Rights Reserved </p>
+>>>>>>> 5eb73ad6d17cff5cca7d1d9a77b46def921a1ef7
 	</div>
 </div>
