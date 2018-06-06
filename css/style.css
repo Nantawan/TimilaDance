@@ -135,7 +135,7 @@ i.fa.fa-lock {
 /*-- /header --*/
 /*-- banner --*/
 .banner {
-    background: url(../images/kid_dance.jpg)no-repeat;
+    background: url(#)no-repeat;//../images/kid_dance.jpg
     background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
@@ -1048,6 +1048,10 @@ select {
 }
 /*-- /agent --*/
 /*-- contact --*/
+#contactus {
+	margin-top: 80px;
+}
+
 .contact {
     padding: 5em 0;
 }
@@ -2068,7 +2072,22 @@ ul.paging{
 .footer-social-icons ul li a{
 	width:30px;
 	height:30px;
-	background:url('../images/img-sprite.png') no-repeat 0px 0px;
+	/* background:url('../images/img-sprite2.png') no-repeat 0px 0px; */
+	display:inline-block;
+	position: relative;
+}
+.facebook{
+	background: url('../images/facebook.png') no-repeat 0px 0px;
+	display:inline-block;
+	position: relative;
+}
+.instagram{
+	background: url('../images/IG.png') no-repeat 0px 0px;
+	display:inline-block;
+	position: relative;
+}
+.youtube{
+	background: url('../images/YouTube.png') no-repeat 0px 0px;
 	display:inline-block;
 	position: relative;
 }
@@ -2111,16 +2130,16 @@ ul.paging{
 .footer-social-icons ul li a.facebook:hover {
 	background-position:-0px -30px;
 }
-.footer-social-icons ul li a.twitter {
+.footer-social-icons ul li a.instagram {
 	background-position:-30px 0px;
 }
-.footer-social-icons ul li a.twitter:hover {
+.footer-social-icons ul li a.instagram:hover {
 	background-position:-30px -30px;
 }
-.footer-social-icons ul li a.flickr {
+.footer-social-icons ul li a.youtube {
 	background-position:-60px 0px;
 }
-.footer-social-icons ul li a.flickr:hover {
+.footer-social-icons ul li a.youtube:hover {
 	background-position:-60px -30px;
 }
 .footer-social-icons ul li a.googleplus {
@@ -4387,4 +4406,18 @@ ul.set-1 {
     border-left: 4px solid #4caf50;
     -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
     box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+}
+//photosList
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
 }

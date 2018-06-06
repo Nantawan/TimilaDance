@@ -14,16 +14,16 @@
 			<li class="sig"><?php echo htmlentities($_SESSION['login']);?></li>
 			<li class="sigi"><a href="logout.php" >/ Logout</a></li>
         </ul>
-		<div class="clearfix"></div>
+		<!-- <div class="clearfix"></div>
 	</div>
 </div><?php } else {?>
-<div class="top-header">
+<!-- <div class="top-header">
 	<div class="container">
-		<ul class="tp-hd-lft wow fadeInLeft animated" data-wow-delay=".5s">
+		<!-- <ul class="tp-hd-lft wow fadeInLeft animated" data-wow-delay=".5s">
 			<li class="hm"><a href="index.php"><i class="fa fa-home"></i></a></li>
 				<li class="hm"><a href="admin/index.php">Admin Login</a></li>
-		</ul>
-		<ul class="tp-hd-rgt wow fadeInRight animated" data-wow-delay=".5s">
+		</ul> -->
+		<!-- <ul class="tp-hd-rgt wow fadeInRight animated" data-wow-delay=".5s">
 			<li class="tol">Contact Timila : 022-620-9744</li>
 			<li class="sig"><a href="#" data-toggle="modal" data-target="#myModal" >Sign Up</a></li>
 			<li class="sigi"><a href="#" data-toggle="modal" data-target="#myModal4" >/ Sign In</a></li>
@@ -31,7 +31,7 @@
 		<div class="clearfix"></div>
 	</div>
 </div>
-<?php }?>
+<?php }?>  -->
 <!--- /top-header ---->
 <!--- header ---->
 <!-- <div class="header">
@@ -46,9 +46,9 @@
             <li><div class="securetxt">SAFE &amp; SECURE </div></li>
 			<div class="clearfix"></div>
 		</div> -->
-		<div class="clearfix"></div>
+		<!-- <div class="clearfix"></div>
 	</div>
-</div>
+</div> -->
 <!--- /header ---->
 <!--- footer-btm ---->
 <!-- <div class="footer-btm wow fadeInLeft animated" data-wow-delay=".5s"> -->
@@ -70,25 +70,25 @@
 						<ul class="nav navbar-nav">
 							<li><a class="navbar-brand" href="index.php"><img src="images/Logo.png" style="width: 7rem"></a></li>
 							<li><a href="index.php">Home</a></li>
-							<!-- <li><a href="page.php?type=aboutus">About</a></li>
-								<li><a href="package-list.php">Booking</a></li>
-								<li><a href="layout-list.php">Course Layout</a></li>
-								<li><a href="page.php?type=terms">Membership</a></li>
-								<li><a href="page.php?type=contact">Pro Shop</a></li> -->
-								<!-- <?php if($_SESSION['login'])
+							<li><a href="page.php?type=aboutus">About Us</a></li>
+								<!-- <li><a href="package-list.php">Booking</a></li> -->
+								<li><a href="photoList.php">Dance Galleries</a></li>
+								<li><a href="contact-us.php">Contact us</a></li>
+								<?php if($_SESSION['login'])
 {?>
 								<li><a href="#" data-toggle="modal" data-target="#myModal3">  Write Us </a>  </li>
 								<?php } else { ?>
-								<li><a href="enquiry.php"> Enquiry </a>  </li>
-								<?php } ?> -->
+								<!-- <li><a href="enquiry.php"> Enquiry </a>  </li> -->
+								<?php } ?>
 								<div class="clearfix"></div>
 
 						</ul>
 					</nav>
-				</div><!-- /.navbar-collapse -->
+				</div>
+				<!-- //.navbar-collapse -->
 			</nav>
 		</div>
 
 		<div class="clearfix"></div>
 	<!-- </div> -->
-<!-- </div> -->
+<!-- </div>

@@ -1,4 +1,4 @@
-NZD<?php
+<?php
 session_start();
 error_reporting(0);
 include('includes/config.php');
@@ -22,11 +22,11 @@ $query->execute();
 $lastInsertId = $dbh->lastInsertId();
 if($lastInsertId)
 {
-$msg="Booked Successfully";
+$msg="Please wait for booking to be confirmed within 24 hours.";
 }
 else
 {
-$error="Something went wrong. Please try again or contact Golf Club directly for booking at 034-999-9999.";
+$error="Something went wrong. Please try again";
 }
 
 }
@@ -34,7 +34,7 @@ $error="Something went wrong. Please try again or contact Golf Club directly for
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Timila Dance Academy</title>
+<title>Timila Dance Academy | Lessons Details</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="applijewelleryion/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -95,7 +95,7 @@ $error="Something went wrong. Please try again or contact Golf Club directly for
 				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
 <?php
 $pid=intval($_GET['pkgid']);
-$sql = "SELECT * from tbllayout where LayoutId=:pid";
+$sql = "SELECT * from tbltourpackages where PackageId=:pid";
 $query = $dbh->prepare($sql);
 $query -> bindParam(':pid', $pid, PDO::PARAM_STR);
 $query->execute();
@@ -119,18 +119,18 @@ foreach($results as $result)
 					<p><b>Features</b> <?php echo htmlentities($result->PackageFetures);?></p>
 					<div class="ban-bottom">
 				<div class="bnr-right">
-				<label class="inputLabel">Date</label>
+				<label class="inputLabel">date</label>
 				<input class="date" id="datepicker" type="text" placeholder="dd-mm-yyyy"  name="fromdate" required="">
 			</div>
 			<div class="bnr-right">
 				<label class="inputLabel">Time</label>
-				<input class="Time" id="timepicker1" type="text" placeholder="hh-mm-ss" name="usr_time" required="">
+				<input class="text" id="" type="text" placeholder="hh-mm-ss" name="todate" required="">
 			</div>
 			</div>
 						<div class="clearfix"></div>
 				<div class="grand">
 					<p>Grand Total</p>
-					<h3>NZD <?php echo htmlentities($result->PackagePrice);?> per person</h3>
+					<h3>NZD 80</h3>
 				</div>
 			</div>
 		<h3>Package Details</h3>
@@ -138,13 +138,13 @@ foreach($results as $result)
 				<div class="clearfix"></div>
 		</div>
 		<div class="selectroom_top">
-			<h2>Special Request</h2>
+			<h2>Travels</h2>
 			<div class="selectroom-info animated wow fadeInUp animated" data-wow-duration="1200ms" data-wow-delay="500ms" style="visibility: visible; animation-duration: 1200ms; animation-delay: 500ms; animation-name: fadeInUp; margin-top: -70px">
 				<ul>
 
 					<li class="spe">
-						<label class="inputLabel">or Click to book</label>
-						<input class="special" type="text" name="comment">
+						<label class="inputLabel">Comment</label>
+						<input class="special" type="text" name="comment" >
 					</li>
 					<?php if($_SESSION['login'])
 					{?>

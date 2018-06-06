@@ -24,7 +24,7 @@ $msg="Page data updated  successfully";
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Aspire | Admin Package Creation</title>
+<title>Timila Dance Academy | Admin Package Creation</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Pooled Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
@@ -89,10 +89,9 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 }
 //-->
 </script>
-<script type="text/javascript" src="nicEdit.js"></script>
-<script type="text/javascript">
-	bkLib.onDomLoaded(function() { nicEditors.allTextAreas() });
-</script>
+<script src="http://js.nicedit.com/nicEdit-latest.js" type="text/javascript"></script>
+<script type="text/javascript">bkLib.onDomLoaded(nicEditors.allTextAreas);</script>
+
 
 </head>
 <body>
@@ -106,15 +105,15 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 				     <div class="clearfix"> </div>
 				</div>
 <!--heder end here-->
-	<ol class="breadcrumb">
+	<!-- <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html">Home</a><i class="fa fa-angle-right"></i>Update Page Data </li>
-            </ol>
+            </ol> -->
 		<!--grid-->
  	<div class="grid-form">
 
 <!---->
   <div class="grid-form1">
-  	       <h3>Update Page Data</h3>
+  	       <h3>Update About Us</h3>
   	        	  <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php }
 				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
   	         <div class="tab-content">
@@ -125,51 +124,52 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 									<div class="col-sm-8">
 									   <select name="menu1" onChange="MM_jumpMenu('parent',this,0)">
                   <option value="" selected="selected" class="form-control">***Select One***</option>
-                  <option value="manage-pages.php?type=terms">Membership</option>
-                  <!-- <option value="manage-pages.php?type=privacy">privacy and policy</option> -->
-                  <option value="manage-pages.php?type=aboutus">aboutus</option>
-                  <option value="manage-pages.php?type=contact">Pro Shop</option>
+                  <!-- <option value="manage-pages.php?type=terms">Terms and Condtions</option> -->
+									<option value="manage-pages.php?type=privacy">Privacy policy</option>
+                  <!-- <option value="manage-pages.php?type=location">Location</option> -->
+                  <option value="manage-pages.php?type=aboutus">About us</option>
+                  <!-- <option value="manage-pages.php?type=contact">Contact Us</option> -->
                 </select>
 									</div>
 								</div>
 <div class="form-group">
-									<label for="focusedinput" class="col-sm-2 control-label">Selected Page</label>
-									<div class="col-sm-8">
+									<!-- <label for="focusedinput" class="col-sm-2 control-label">Selected Page</label>
+									<div class="col-sm-8"> -->
 									<?php
 
 			switch($_GET['type'])
 			{
-				case "terms" :
-									echo "Membership";
-									break;
+				// case "terms" :
+				// 					echo "Term and Conditions";
+				// 					break;
 
 				case "privacy" :
 									echo "Privacy And Policy";
 									break;
 
 				case "aboutus" :
-									echo "About US";
+									echo "About";
 									break;
-				case "software" :
-									echo "Offers";
-									break;
-				case "aspnet" :
-									echo "Vission And MISSION";
-									break;
-				case "objectives" :
-									echo "Objectives";
-									break;
-				case "disclaimer" :
-									echo "Disclaimer";
-									break;
-				case "vbnet" :
-									echo "Partner With Us";
-									break;
-				case "candc" :
-									echo "Super Brand";
-									break;
-				case "contact" :
-									echo "Pro Shop";
+				// case "location" ://software
+				// 					echo "Location";//Offers
+				// 					break;
+				// case "aspnet" :
+				// 					echo "Vision And MISSION";
+				// 					break;
+				// case "objectives" :
+				// 					echo "Objectives";
+				// 					break;
+				// case "disclaimer" :
+				// 					echo "Disclaimer";
+				// 					break;
+				// case "vbnet" :
+				// 					echo "Partner With Us";
+				// 					break;
+				// case "candc" :
+				// 					echo "Super Brand";
+				// 					break;
+				// case "contact" :
+				// 					echo "Contact us";
 									break;
 
 
@@ -186,7 +186,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 
 
 			?>
-									</div>
+									<!-- </div> -->
 								</div>
 
 
@@ -195,7 +195,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 
 
 <div class="form-group">
-									<label for="focusedinput" class="col-sm-2 control-label">Package Details</label>
+									<label for="focusedinput" class="col-sm-2 control-label">Input data by clicking in the text area and paste required data</label>
 									<div class="col-sm-8">
 
 
@@ -222,7 +222,9 @@ echo htmlentities($result->detail);
 
 
 								<div class="row">
-			<div class="col-sm-8 col-sm-offset-2">
+
+
+			<div class="col-sm-8 col-sm-offset-5">
 				<button type="submit" name="submit" value="Update" id="submit" class="btn-primary btn">Update</button>
 
 
