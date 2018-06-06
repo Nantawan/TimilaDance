@@ -43,6 +43,11 @@ include('includes/config.php');
 		<div class="room-bottom">
 			<h3>Events</h3>
 
+			<section class="section_area">
+				<div class="container">
+					<div class="row-fluid">
+
+
 			<div class="video_gallery_container">
 				<a class="videoLink" videowidth="800" videoheight="450" videofile="cycling_large" videocaption="Video caption goes here"></a>
 				<div class="clear_both"></div>

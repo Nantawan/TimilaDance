@@ -1,6 +1,10 @@
 <div class="header-main">
 					<div class="logo-w3-agile">
+<<<<<<< HEAD
 								<h1><a href="dashboard.php">TDA Management System</a></h1>
+=======
+								<h1><a href="dashboard.php">TDA Administration System</a></h1>
+>>>>>>> 5eb73ad6d17cff5cca7d1d9a77b46def921a1ef7
 							</div>
 
 

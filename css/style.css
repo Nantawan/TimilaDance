@@ -135,7 +135,7 @@ i.fa.fa-lock {
 /*-- /header --*/
 /*-- banner --*/
 .banner {
-    background: url(../images/kid_dance.jpg)no-repeat;
+    background: url(#)no-repeat;//../images/kid_dance.jpg
     background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
@@ -479,7 +479,8 @@ i.fa.fa-truck,i.fa.fa-user,i.fa.fa-ticket {
     color:#4CFF00;
 }
 .footer-btm {
-    background:linear-gradient(to right, 	#a4673e, #daa87e, #b6774f,	#a4673e, #daa87e, #b6774f, 	#a4673e) !important;
+    background:linear-gradient(to right, 	#a4673e, #daa87e, #b6774f,	#a4673e, #daa87e, #b6774f, 	#a4673e);
+		background: black;
     padding: 0.5em 0;
 	text-align:center;
 }
@@ -1105,6 +1106,7 @@ select {
 }
 /*-- /agent --*/
 /*-- contact --*/
+
 .contact {
     padding: 5em 0;
 }
@@ -1129,6 +1131,7 @@ select {
 .con-top {
     margin-top: 2em;
 }
+
 /*-- /contact --*/
 /*-- details --*/
 .details-middle li {
@@ -2125,10 +2128,14 @@ ul.paging{
 .footer-social-icons ul li a{
 	width:30px;
 	height:30px;
-	background:url('../images/img-sprite.png') no-repeat 0px 0px;
+	/* background:url('../images/img-sprite2.png') no-repeat 0px 0px; */
 	display:inline-block;
 	position: relative;
 }
+a.fa fa-facebook {
+	color: #fff;
+}
+
 .footer-social-icons ul li a span {
     color: #fff;
     position: absolute;
@@ -2168,16 +2175,16 @@ ul.paging{
 .footer-0social-icons ul li a.facebook:hover {
 	background-position:-0px -30px;
 }
-.footer-social-icons ul li a.twitter {
+.footer-social-icons ul li a.instagram {
 	background-position:-30px 0px;
 }
-.footer-social-icons ul li a.twitter:hover {
+.footer-social-icons ul li a.instagram:hover {
 	background-position:-30px -30px;
 }
-.footer-social-icons ul li a.flickr {
+.footer-social-icons ul li a.youtube {
 	background-position:-60px 0px;
 }
-.footer-social-icons ul li a.flickr:hover {
+.footer-social-icons ul li a.youtube:hover {
 	background-position:-60px -30px;
 }
 .footer-social-icons ul li a.googleplus {
@@ -4501,4 +4508,45 @@ ul.set-1 {
     border-left: 4px solid #4caf50;
     -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
     box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+}
+/*-- photolist page --*/
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+/*-- contact info page --*/
+.icon_wrap .fa {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #e6e5e5;
+  border-radius: 50%;
+  color: #555;
+  display: inline-block;
+  font-size: 22px;
+  height: 44px;
+  line-height: 44px;
+  margin-right: 15px;
+  text-align: center;
+  vertical-align: middle;
+  width: 44px;
+}
+.contact_info_m, .icon_wrap {
+	display:table-cell;
+	vertical-align:middle;
+
+}
+.map_wrap {
+	margin:40px 0 0;
+}
+.map_wrap iframe {
+	width:100%;
+	height:420px;
 }

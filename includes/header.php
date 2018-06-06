@@ -14,11 +14,30 @@
 			<li class="sig"><?php echo htmlentities($_SESSION['login']);?></li>
 			<li class="sigi"><a href="logout.php" >/ Logout</a></li>
         </ul>
-		<div class="clearfix"></div>
+		<!-- <div class="clearfix"></div>
 	</div>
 </div><?php } else {?>
+<<<<<<< HEAD
 
 <?php }?>
+=======
+<!-- <div class="top-header">
+	<div class="container">
+		<!-- <ul class="tp-hd-lft wow fadeInLeft animated" data-wow-delay=".5s">
+			<li class="hm"><a href="index.php"><i class="fa fa-home"></i></a></li>
+				<li class="hm"><a href="admin/index.php">Admin Login</a></li>
+		</ul> -->
+		<!-- <ul class="tp-hd-rgt wow fadeInRight animated" data-wow-delay=".5s">
+			<li class="tol">Contact Timila : 022-620-9744</li>
+			<li class="sig"><a href="#" data-toggle="modal" data-target="#myModal" >Sign Up</a></li>
+			<li class="sigi"><a href="#" data-toggle="modal" data-target="#myModal4" >/ Sign In</a></li>
+        </ul>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<?php }?>  -->
+<!--- /top-header ---->
+>>>>>>> 5eb73ad6d17cff5cca7d1d9a77b46def921a1ef7
 <!--- header ---->
 <!-- <div class="header">
 	<div class="container">
@@ -32,9 +51,9 @@
             <li><div class="securetxt">SAFE &amp; SECURE </div></li>
 			<div class="clearfix"></div>
 		</div> -->
-		<div class="clearfix"></div>
+		<!-- <div class="clearfix"></div>
 	</div>
-</div>
+</div> -->
 <!--- /header ---->
 <!--- footer-btm ---->
 <!-- <div class="footer-btm wow fadeInLeft animated" data-wow-delay=".5s"> -->
@@ -56,9 +75,10 @@
 				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 					<nav class="cl-effect-1">
 						<ul class="nav navbar-nav">
-							<li><a class="navbar-brand" href="index.php"><img src="images/Logo.png" style="width: 7rem"></a></li>
+							<li><a class="navbar-brand" href="index.php"><img src="images/Logo_vintage.png" style="width: 7rem"></a></li>
 							<li><a href="index.php">Home</a></li>
 							<li><a href="page.php?type=aboutus">About Us</a></li>
+<<<<<<< HEAD
 								<li class="dropdown"><a href="#" data-toggle="dropdown" aria haspopup="true" aria-expanded="false" aria-hidden="true">Dance Galleries</a>
 								<ul class="dropdown-menu">
 									<li><a href=" ">Photos</a></li>
@@ -67,19 +87,26 @@
 								</li>
 								<li><a href="layout-list.php">Contact Us</a></li>
 								<!-- <?php if($_SESSION['login'])
+=======
+								<!-- <li><a href="package-list.php">Booking</a></li> -->
+								<li><a href="photoList.php">Dance Galleries</a></li>
+								<li><a href="contact-us.php">Contact us</a></li>
+								<?php if($_SESSION['login'])
+>>>>>>> 5eb73ad6d17cff5cca7d1d9a77b46def921a1ef7
 {?>
 								<li><a href="#" data-toggle="modal" data-target="#myModal3">  Write Us </a>  </li>
 								<?php } else { ?>
-								<li><a href="enquiry.php"> Enquiry </a>  </li>
-								<?php } ?> -->
+								<!-- <li><a href="enquiry.php"> Enquiry </a>  </li> -->
+								<?php } ?>
 								<div class="clearfix"></div>
 
 						</ul>
 					</nav>
-				</div><!-- /.navbar-collapse -->
+				</div>
+				<!-- //.navbar-collapse -->
 			</nav>
 		</div>
 
 		<div class="clearfix"></div>
 	<!-- </div> -->
-<!-- </div> -->
+<!-- </div>

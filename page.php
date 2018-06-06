@@ -33,7 +33,11 @@ $error="Something went wrong. Please try again";
 <!DOCTYPE HTML>
 <html>
 <head>
+<<<<<<< HEAD
 <title>About Us</title>
+=======
+<title>Timila Dance Academy</title>
+>>>>>>> 5eb73ad6d17cff5cca7d1d9a77b46def921a1ef7
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Tourism Management System In PHP" />
